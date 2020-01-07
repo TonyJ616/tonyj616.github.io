@@ -111,8 +111,10 @@ function itemChange(event){
     if (this.classList.contains("expanded")){
         this.classList.remove("expanded");
         this.children[0].setAttribute("src", "img/right2.png");
+        this.children[0].setAttribute("alt", "collapsed");
     } else {
         this.classList.add("expanded");
         this.children[0].setAttribute("src", "img/down1.png");
+        this.children[0].setAttribute("alt", "opened");
     }
 }
